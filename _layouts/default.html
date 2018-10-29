@@ -125,8 +125,8 @@ $(function() {
 {% if year == site.this-year %}
 {% continue %}
 {% endif %}
-<li class=""><a href="{{ year }}/">VisLies {{ year }}</a></li>
-<li class="nav-sub-item"><a href="{{ year }}/gallery/">Gallery</a></li>
+<li class=""><a href="{{ site.url }}/{{ year }}/">VisLies {{ year }}</a></li>
+<li class="nav-sub-item"><a href="{{ site.url }}/{{ year }}/gallery/">Gallery</a></li>
 {% endfor %}
 <li class="item-131"></li></ul>
 						</div>
