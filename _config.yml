@@ -1,5 +1,3 @@
-# Welcome to Jekyll!
-#
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
@@ -19,8 +17,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   VisLies! showcases examples of egregious perceptual, cognitive, and
   conceptual errors in visualization, presented by members of the Vis
   community.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://vislies.org" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "2018" # the subpath of your site, e.g. /blog
+url: "http://www.vislies.org" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
