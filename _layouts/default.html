@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://ldav.org/ -->
+<html lang="en-gb" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<!--<base href="http://ldav.org/">--><base href=".">
+	<meta name="author" content="Kenneth Moreland">
+	<title>{{ site.title }}</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/icon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="images/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="images/icon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/icon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/icon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="images/icon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="images/icon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="images/icon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="images/icon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="images/icon/mstile-310x310.png" />
+
+	<link href="{{ site.baseurl }}/assets/css/template.css" rel="stylesheet" type="text/css">
+	<link href="{{ site.baseurl }}/assets/css/fonts.css" rel="stylesheet" type="text/css">
+
+	<style>
+    	h1, h2, h3, h4, h5, h6, .site-title {
+	    	font-family: 'Open Sans', sans-serif;
+	    }
+	table.agenda {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #E7E7E7;
+}
+    </style>
+    <!--
+	<script src="./Home_files/jquery.min.js"></script>
+	<script src="./Home_files/jquery-noconflict.js"></script>
+	<script src="./Home_files/jquery-migrate.min.js"></script>
+	<script src="./Home_files/caption.js"></script>
+	<script src="./Home_files/bootstrap.min.js"></script>
+	<script src="./Home_files/template.js"></script>
+    -->
+    <script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/template.js"></script>
+	<script>
+// Removed because it relies on script we are not using
+//jQuery(window).on('load',  function() {
+//				new JCaption('img.caption');
+//			});
+//jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}if(r){r.open("GET","/index.php?option=com_ajax&format=json",true);r.send(null)}},840000);
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+$(function() {
+    var $sidebar   = $("#sidebar"),
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+
+    $window.scroll(function() {
+        // Only do the scroll if the sidebar is floating on the left. On small
+        // windows, it is placed on top, and we do not want to scroll it.
+        if ($sidebar.css("float") == "left") {
+            if ($window.scrollTop() > offset.top) {
+                $sidebar.stop().animate({
+                    marginTop: $window.scrollTop() - offset.top + topPadding
+                });
+            } else {
+                $sidebar.stop().animate({
+                    marginTop: 0
+                });
+            }
+        }
+    });
+});
+	</script>
+
+	<!--[if lt IE 9]><script src="/media/jui/js/html5.js"></script><![endif]-->
+</head>
+<body class="site com_content view-article no-layout no-task itemid-101">
+	<!-- Body -->
+	<div class="body" id="top">
+		<div class="container">
+			<div class="row-fluid">
+				<!-- Begin Sidebar -->
+				<div id="sidebar" class="span3">
+					<div class="sidebar-nav">
+						<div class="moduletable_menu">
+							<h3>Menu</h3>
+							<ul class="nav menu">
+<li class=""><a href="{{ site.url }}">Home</a></li>
+<li class=""><a href="{{ site.baseurl }}/"><strong>{{ site.title }}</strong></a></li>
+{% for link in page.main-nav %}
+<li class="nav-sub-item"><a href="{{ link.url }}">{{ link.title }}</a></li>
+{% endfor %}
+{% if site.gallery-ready %}
+<li class=""><a href="{{ site.baseurl }}/gallery/"><strong>VisLies {{ site.this-year }} Gallery</strong></a></li>
+{% endif %}
+{% for link in page.gallery-nav %}
+<li class="nav-sub-item"><a href="{{ link.url }}">{{ link.title }}</a></li>
+{% endfor %}
+{% for year in (site.first-year..site.this-year) reversed %}
+{% if year == site.this-year %}
+{% continue %}
+{% endif %}
+<li class=""><a href="{{ year }}/">VisLies {{ year }}</a></li>
+<li class="nav-sub-item"><a href="{{ year }}/gallery/">Gallery</a></li>
+{% endfor %}
+<li class="item-131"></li></ul>
+						</div>
+					</div>
+				</div>
+				<!-- End Sidebar -->
+				<main id="content" role="main" class="span9">
+					<!-- Begin Content -->
+
+					<div class="item-page" itemscope="" itemtype="https://schema.org/Article">
+						<meta itemprop="inLanguage" content="en-GB">
+	
+						<div itemprop="articleBody">
+							{{ content }}
+						</div>
+					</div>
+					<!-- End Content -->
+				</main>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer" role="contentinfo">
+		<div class="container">
+			<hr>
+			<p class="pull-right">
+				<a href="#top" id="back-top">Back to Top</a>
+			</p>
+			<p><!--copyright--></p>
+		</div>
+	</footer>
+
+</body></html>
