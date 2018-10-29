@@ -63,10 +63,67 @@ items needed to be updated are `title`, `email`, and `this-year`.
 ## Creating content
 
 Content is created by editing the `.md` files in this repository. Every
-`.md` file in the `_pages` directory will be converted to an html page. The
+`.md` file found in the repository will be converted to an html page. The
 most likely pages to change are `index.md` and `gallery/index.md`. There
 are templates for each of these pages. Take particular attention to the
 configuration at the top of each one.
+
+### Laying out images
+
+The VisLies pages, particularly those of the galleries, typically have lots
+of images, and usually these images can be clicked to get a larger image.
+The typical markdown way of embedding an image is to use syntax like the
+following:
+
+``` markdown
+![Alt text](path/to/image.png)
+```
+
+However, there are two problems with this. The first is that we want the
+image to have a link to a higher resolution form of the image. The second
+is that we often want to size or float these images to the "right" place.
+We solve both of these problems by wrapping the image within an `<a>` html
+tag. The tag will create the link to the full resolution image and define a
+class that gives the position of the image.
+
+``` markdown
+<a href="foo.png" class="image-right">
+![A foo](foo-thumbnail.png)
+</a>
+```
+
+The CSS for the VisLies pages have the following classes to help position
+images:
+
+  * `image-left` Floats the image to the left of the text.
+  * `image-right` Floats the image to the right of the text.
+  * `image-full` Stretches the image across the entire page.
+  * `image-half` Sizes the image to half the width of the text. Put 2
+    images together when using `image-half`.
+  * `image-third` Sizes the image to a third the width of the text. Put 3
+    images together when using `image-third`.
+
+Two of these class, `image-right` and `image-left`, create floating image,
+and they are used a lot. One of the problems with floating images is that
+they can run too far into other text and create issues. The easiest way to
+get around this is to create a `div` tag that acts as a barrier that only
+continues the page after the bottom of any active float. This can be done
+simply by making a `div` tag with the class `image-stop` where you want to
+stop the float's affect.
+
+``` markdown
+<a href="foo.png" class="image-right">
+![A foo](foo-thumbnail.png)
+</a>
+
+Here is a small amount of text referring to this image.
+
+<div class="image-stop" />
+```
+
+If the text contained with the `div` does not go all the way to the bottom
+of the image, whitespace will be added to fill that space. Perhaps not the
+most elegant solution, but it works well enough.
 
 ## Link to gallery
 
@@ -86,3 +143,7 @@ subdirectory where these pages will be posted.
 
 When moving to a sub-archive, you need to make sure that you push as the
 gh-pages branch.
+
+You probably also want to delete the `CNAME` file in the repository. It
+probably won't do anything, but `CNAME` really should only be in the base
+repository, and GitHub will give you a warning about it.
