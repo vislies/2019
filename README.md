@@ -1,3 +1,6 @@
+---
+layout: blank
+---
 # Template for VisLies web pages
 
 This repository contains the template for the VisLies web pages. This is

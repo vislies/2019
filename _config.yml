@@ -17,7 +17,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   VisLies! showcases examples of egregious perceptual, cognitive, and
   conceptual errors in visualization, presented by members of the Vis
   community.
-baseurl: "2018" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /2018
 url: "http://www.vislies.org" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 #github_username:  jekyll
@@ -44,4 +44,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - README.md
