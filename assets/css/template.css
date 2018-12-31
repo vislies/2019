@@ -1853,6 +1853,7 @@ h5,
 h6 {
 	margin: 12px 0;
 	word-wrap: break-word;
+	clear: both;
 }
 h1 {
 	font-size: 26px;
