@@ -7,13 +7,15 @@ main-nav:
     url: "#organization"
 ---
 
-![VisLies 2018!](images/VisLiesLogo2018.png)
+![VisLies 2019!](images/VisLiesLogo2019.png)
 
-# VisLies 2018
+# VisLies 2019
 
-**Tuesday October 23** 12:30 – 2:00 PM<br />
-Held in conjunction with IEEE VIS 2018<br />
+<!--
+**Tuesday October 24** 12:30 – 2:00 PM<br />
+Held in conjunction with IEEE VIS 2019<br />
 Estrel Hotel & Congress Center, Room 30310<br />
+-->
 
 This fun and engaging event showcases examples of egregious perceptual,
 cognitive, and conceptual errors in visualization, presented by members of

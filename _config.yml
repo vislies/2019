@@ -11,8 +11,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: VisLies 2018
-email: vislies2018@vislies.org
+title: VisLies 2019
+email: vislies2019@vislies.org
 description: >- # this means to ignore newlines until "baseurl:"
   VisLies! showcases examples of egregious perceptual, cognitive, and
   conceptual errors in visualization, presented by members of the Vis
@@ -22,7 +22,7 @@ url: "http://www.vislies.org" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
-this-year: 2018
+this-year: 2019
 first-year: 2015
 
 gallery-ready: false
