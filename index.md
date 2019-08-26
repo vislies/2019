@@ -78,5 +78,5 @@ your name and a note that you want to present. That's it.
 Questions? Contact us at
 <a href="mailto:vislies2019@vislies.org">vislies2019@vislies.org</a>.
 
-| ![Kenneth Moreland](images/Ken.jpg) | ![Bernice Rogowitz](images/Bernice.jpg) |
+| ![Kenneth Moreland](images/KenEdited.jpg) | ![Bernice Rogowitz](images/BerniceEdited.jpg) |
 | <a href="http://www.kennethmoreland.com/">Kenneth Moreland</a> | <a href="https://sites.google.com/site/bernicerogowitz/">Bernice Rogowitz</a> |
