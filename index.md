@@ -70,13 +70,13 @@ There are lots of great reasons to present at VisLies.
 ### Submission
 
 Becoming part of VisLies is easy. Simply send an email to
-<a href="mailto:vislies2018@vislies.org">vislies2018@vislies.org</a> with
+<a href="mailto:vislies2019@vislies.org">vislies2019@vislies.org</a> with
 your name and a note that you want to present. That's it.
 
 ## Organization
 
 Questions? Contact us at
-<a href="mailto:vislies2018@vislies.org">vislies2018@vislies.org</a>.
+<a href="mailto:vislies2019@vislies.org">vislies2019@vislies.org</a>.
 
-| ![Bernice Rogowitz](images/Bernice.jpg) | ![Kenneth Moreland](images/Ken.jpg) |
-| <a href="https://sites.google.com/site/bernicerogowitz/">Bernice Rogowitz</a> | <a href="http://www.kennethmoreland.com/">Kenneth Moreland</a> |
+| ![Kenneth Moreland](images/Ken.jpg) | ![Bernice Rogowitz](images/Bernice.jpg) |
+| <a href="http://www.kennethmoreland.com/">Kenneth Moreland</a> | <a href="https://sites.google.com/site/bernicerogowitz/">Bernice Rogowitz</a> |
