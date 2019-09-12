@@ -11,9 +11,9 @@ main-nav:
 
 # VisLies 2019
 
-**Tuesday, October 22** 12:30 – 2:00 PM (_tentitive_)<br />
+**Tuesday, October 22** 12:30 – 2:00 PM<br />
 Held in conjunction with IEEE VIS 2019<br />
-Vancouver Convention Centre East, Room TBA<br />
+Vancouver Convention Centre East, Room 8+15<br />
 
 This fun and engaging event showcases examples of egregious perceptual,
 cognitive, and conceptual errors in visualization, presented by members of
