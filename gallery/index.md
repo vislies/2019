@@ -7,6 +7,8 @@ gallery-nav:
     url: "#a-flattened-earth"
   - title: A Really Flat Earth
     url: "#a-really-flat-earth"
+  - title: Honorable Bar Charts
+    url: "#honorable-bar-charts"
 ---
 
 # VisLies 2019 Gallery
@@ -214,4 +216,32 @@ Experiments measuring the Coriolis effect are constantly ongoing, most notably i
 [1912 book by Johann Hagen]: https://www.abebooks.co.uk/Rotation-Terre-preuves-mécaniques-anciennes-nouvelles/10045352902/bd
 [Foucault pendulum]: https://en.wikipedia.org/wiki/Foucault_pendulum
 
+## Honorable Bar Charts
+
+[Guan-de Wu] provided this quick capture from a presentation from HUAWEI, a mobile phone company in China.
+
+<a href="https://drive.google.com/open?id=1X9c1ofrvppW6A9HGHzcnF0wFvk0LjPZH" class="image-full">
+![HONOR Play](honor-play-much-faster-thumbnail.jpg)
+</a>
+
+This photo shows a shot of a HUAWEI presentation on HONOR Play, a rendering product for its mobile phones.
+The bar chart on the slide for this presentation is showing how HONOR Play renders faster than its competitor.
+Taller bars, which are ostensibly representing frames per second (FPS), represent better performance.
+The measured numbers do show better performance with HONOR Play, but the lengths of the bars is less than honest.
+
+A closer inspection reveals that the lengths of the bars are not
+commensurate with the relative performance.
+To exaggerate the difference, the designers of the plot set the y axis bottoms at a non-zero value, which make the difference far larger than the real difference.
+For example, in the second chart, HONOR Play is 57.1 FPS and its competitor is 51.5 FPS, which makes HONOR Play about 11% faster.
+However, the chart looks like the FPS of HONOR Play is more than 4 times that of
+its competitor.
+
+<a href="honor-play-honest.svg" class="image-right">
+<img src="honor-play-honest.svg" alt="Correct Comparison" width="300px" />
+</a>
+
+Here is a corrected version of the same plot.
+As you can see, the difference between the two rendering systems is not nearly as dramatic as initially portrayed.
+
 [Ken Moreland]: http://kennethmoreland.com
+[Guan-de Wu]: http://www.gdwu.xyz/about/
