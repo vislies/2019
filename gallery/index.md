@@ -9,6 +9,8 @@ gallery-nav:
     url: "#a-really-flat-earth"
   - title: Honorable Bar Charts
     url: "#honorable-bar-charts"
+  - title: Impeachable Geography
+    url: "#impeachable-geography"
 ---
 
 # VisLies 2019 Gallery
@@ -243,5 +245,78 @@ its competitor.
 Here is a corrected version of the same plot.
 As you can see, the difference between the two rendering systems is not nearly as dramatic as initially portrayed.
 
+## Impeachable Geography
+
+<a href="https://drive.google.com/open?id=1eFjKXee0q9Vox-ZuauBB9YHFJFRcvOvS" class="image-right">
+![Try to Impeach This](try-to-impeach-this-thumbnail.jpg)
+</a>
+
+[David Borland] presented this image featured in a recent tweet from U.S. President Donald Trump.
+The point of this image is to show the overwhelming support for the president based on the results of the last election.
+Red represents counties that voted for Trump whereas blue represents those counties that voted for his opponent, Hillary Clinton.
+The majority of the United States is covered red.
+Looks like most of America supports (or at least supported) Donald Trump, right?
+
+Well, no.
+[Donald Trump was not elected by a landslide.]
+(In fact, if U.S. elections used the popular vote, he would have lost.)
+Clearly there must be something misleading about this map.
+One problem oft pointed out is that [the data is not quite correct].
+However, the diference is pretty sublte, visually.
+[The corrected data] looks pretty much the same.
+
+The problem is that this type of visualization, technically called a [choropleth map], has a known issue of the variable being represented getting confused with the area they are attached to.
+The population density varies greatly across the United States.
+Those people located rural areas have a greater area assocated to them than people in urban areas.
+
+<div class="image-stop" />
+
+<a href="https://drive.google.com/open?id=1L-ObQ8cGPYof4I1FFEpNzfhmlyw0BVRk" class="image-right">
+![Half of U.S. Population](us-population-half-n-half-thumbnail.jpg)
+</a>
+
+This map demonstrates the problem.
+In it, the regions of the map colored in blue contain half of the population of the United States, and the gray regions contain the other half.
+Yet, the gray overwhelms to visualization.
+
+This is why Trump's election map looks so overwhelmed with red.
+Many of Trump's supporters reside in rural areas.
+So these large areas of Trump supporters actually contain fewer people than the urban areas of Clinton supporters.
+
+<div class="image-stop" />
+
+<a href="https://drive.google.com/open?id=10qiMyceb6Lq4tw6nUvrwEWbxekR0SwRP" class="image-right">
+![Muddy America](muddy-america-thumbnail.png)
+</a>
+
+Unfortunately, there is no straightforward fix to this problem.
+Several techniques exist and have been applied to this data.
+Here is a solution [presented by Larry Weru for STEM Lounge].
+This visualization corrects the original choropleth by altering the colors in two important ways.
+First, rather than showing the colors with a full blue or red, the colors are adjusting on a scale from blue to gray to red based on the margin of victory.
+Close races are colored more gray whereas regions that are very red or blue are stronger wins.
+Second, areas with sparse populations are represented with muted colors.
+In this way the colors more accurately represent the real support for each candidate.
+
+<div class="image-stop" />
+
+<a href="https://drive.google.com/open?id=1kN3Ul1cPDsrLNEIMDM-D7w9dO4gG_Dqf" class="image-right">
+![xkcd Election Map](election-map-xkcd-thumbnail.png)
+</a>
+
+Another approach is to avoid filling the space with colors.
+Instead, the data (in this case, votes) are represented with dots or some other glyph.
+This is what is done in [this map featured in xkcd].
+As we can see, densly populated areas have a lot of color whereas sparsely populated areas have empty space.
+
+
+[Donald Trump was not elected by a landslide.]: https://en.wikipedia.org/wiki/2016_United_States_presidential_election
+[the data is not quite correct]: https://www.cnn.com/2019/10/01/politics/trump-impeach-this-map-fact-check/index.html
+[The corrected data]: https://drive.google.com/open?id=18DofUCkWJ4YFbx3heE2MVc63wbV4RDBx
+[choropleth map]: https://en.wikipedia.org/wiki/Choropleth_map
+[presented by Larry Weru for STEM Lounge]: https://stemlounge.com/muddy-america-color-balancing-trumps-election-map-infographic/?v=2
+[this map featured in xkcd]: https://xkcd.com/1939/
+
 [Ken Moreland]: http://kennethmoreland.com
 [Guan-de Wu]: http://www.gdwu.xyz/about/
+[David Borland]: https://renci.org/staff/david-borland/
