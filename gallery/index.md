@@ -13,6 +13,8 @@ gallery-nav:
     url: "#impeachable-geography"
   - title: When the Truth is a Lie
     url: "#when-the-truth-is-a-lie"
+  - title: I Speak What?
+    url: "#i-speak-what"
 ---
 
 # VisLies 2019 Gallery
@@ -362,7 +364,36 @@ Although these visualization are intentionally modifying the representation with
 [Roy's recent medical visualization work]: http://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0007354802300238
 
 
+## I Speak What?
+
+<a href="https://drive.google.com/open?id=1-4G_vH7fMR5_GpN0oJWOnS-7M1CA2jLy" class="image-right">
+![Funny Languages](un-deux-trois-parlez-thumbnail.png)
+</a>
+
+[Maria Zemankova] presented this visualization that, while perhaps not strictly a lie, definitely threw her through a loop.
+The visualization associates most spoken languages with different countries.
+But a quick glance shows some very strange values.
+It has, for example, the U.S. associated with Chinese, Chile associated with German, and Germany associated with English.
+Obviously, none of these are labels are the correct languages of these countries, which is [easily verified].
+
+So what gives?
+It could take a second or third look to find out.
+If you go to [The Economist article featuring this graphic], you will see a bold title labeled "Un, deux, trois... parlez!"
+That's probably not the most helpful text, even if you understand French.
+But then read the less pronounced text below that.
+This map gives the _third_ most spoken language, not the first most spoken.
+Now this map makes a lot more sense.
+
+Still, identifying countries by their third most spoken language is a strange thing to do by itself and out of context.
+It is natural to assume that a single label next to a geographic region identifies the most predominant thing for that region.
+Breaking assumptions like this should be done with care.
+
+[The Economist article featuring this graphic]: https://www.economist.com/graphic-detail/2019/10/17/why-do-so-many-australians-speak-arabic
+[easily verified]: https://en.wikipedia.org/wiki/List_of_languages_by_the_number_of_countries_in_which_they_are_recognized_as_an_official_language
+
+
 [Ken Moreland]: http://kennethmoreland.com
 [Guan-de Wu]: http://www.gdwu.xyz/about/
 [David Borland]: https://renci.org/staff/david-borland/
 [Roy Ruddle]: http://www.comp.leeds.ac.uk/royr/
+[Maria Zemankova]: https://www.nsf.gov/staff/staff_bio.jsp?lan=mzemanko
