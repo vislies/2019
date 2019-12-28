@@ -11,6 +11,8 @@ gallery-nav:
     url: "#honorable-bar-charts"
   - title: Impeachable Geography
     url: "#impeachable-geography"
+  - title: When the Truth is a Lie
+    url: "#when-the-truth-is-a-lie"
 ---
 
 # VisLies 2019 Gallery
@@ -218,6 +220,7 @@ Experiments measuring the Coriolis effect are constantly ongoing, most notably i
 [1912 book by Johann Hagen]: https://www.abebooks.co.uk/Rotation-Terre-preuves-mécaniques-anciennes-nouvelles/10045352902/bd
 [Foucault pendulum]: https://en.wikipedia.org/wiki/Foucault_pendulum
 
+
 ## Honorable Bar Charts
 
 [Guan-de Wu] provided this quick capture from a presentation from HUAWEI, a mobile phone company in China.
@@ -245,6 +248,7 @@ its competitor.
 Here is a corrected version of the same plot.
 As you can see, the difference between the two rendering systems is not nearly as dramatic as initially portrayed.
 
+
 ## Impeachable Geography
 
 <a href="https://drive.google.com/open?id=1eFjKXee0q9Vox-ZuauBB9YHFJFRcvOvS" class="image-right">
@@ -262,12 +266,12 @@ Well, no.
 (In fact, if U.S. elections used the popular vote, he would have lost.)
 Clearly there must be something misleading about this map.
 One problem oft pointed out is that [the data is not quite correct].
-However, the diference is pretty sublte, visually.
+However, the difference is pretty subtle, visually.
 [The corrected data] looks pretty much the same.
 
 The problem is that this type of visualization, technically called a [choropleth map], has a known issue of the variable being represented getting confused with the area they are attached to.
 The population density varies greatly across the United States.
-Those people located rural areas have a greater area assocated to them than people in urban areas.
+Those people located rural areas have a greater area associated to them than people in urban areas.
 
 <div class="image-stop" />
 
@@ -307,8 +311,7 @@ In this way the colors more accurately represent the real support for each candi
 Another approach is to avoid filling the space with colors.
 Instead, the data (in this case, votes) are represented with dots or some other glyph.
 This is what is done in [this map featured in xkcd].
-As we can see, densly populated areas have a lot of color whereas sparsely populated areas have empty space.
-
+As we can see, densely populated areas have a lot of color whereas sparsely populated areas have empty space.
 
 [Donald Trump was not elected by a landslide.]: https://en.wikipedia.org/wiki/2016_United_States_presidential_election
 [the data is not quite correct]: https://www.cnn.com/2019/10/01/politics/trump-impeach-this-map-fact-check/index.html
@@ -317,6 +320,49 @@ As we can see, densly populated areas have a lot of color whereas sparsely popul
 [presented by Larry Weru for STEM Lounge]: https://stemlounge.com/muddy-america-color-balancing-trumps-election-map-infographic/?v=2
 [this map featured in xkcd]: https://xkcd.com/1939/
 
+
+## When the Truth is a Lie
+
+<a href="perceptual-discontinuity.svg" class="image-right">
+<img src="perceptual-discontinuity.svg" alt="Correct Comparison" width="300px" />
+</a>
+
+[Roy Ruddle] presented this conundrum.
+Consider these two bar graphs that are supposed to be showing the same data.
+The values for variables A through E are 0, 1, 5,000,000, 9,999,999, and 10,000,000, respectively.
+Which of these bar charts is the best representation?
+
+The bar chart at the left is an honest representation.
+The length of the bars are linearly scaled with respect to the variable.
+
+The issue comes in with variables B and D.
+The length of B should be 1 ten-millionth the size of the full bar, which is much less than the size of a pixel and is thus not visible.
+Likewise, the length of D is indistinguishable from the full bar.
+
+From a statistical standpoint, this makes sense.
+A 1 in 10,000,000 occurrence is so rare as to be statistically insignificant.
+However, in practice that rare occurrence can be critically important, such as an event that causes people to die.
+In such a case, alerting the viewer to the fact that rare occurrences happen is important.
+In this case, the bar chart to the right is better.
+The right bar chart uses a discontinuous scaling to make the first and last values visible.
+
+<a href="https://drive.google.com/open?id=10drwfKf-GkFChMj-nxAX0Wy6aUCaZYoz" class="image-left">
+![Perceptual Discontinuity in Practice](perceptual-discontinuity-in-practice-thumbnail.png)
+</a>
+
+This was the issue for some of [Roy's recent medical visualization work].
+At issue was indicating values that were close to the minimum or maximum value.
+As shown here, Roy used this trick of a discontinuous scaling at the ends of the range to indicate a small but important value.
+Additionally, the visualization provides a second indication when a measurement is at its min (0%) or max (100%).
+
+This is an example where vis truth or lie can get a bit fuzzy.
+The most important part of a visualization is to provide the information that a viewer most needs.
+Although these visualization are intentionally modifying the representation with respect to the data, a viewer with an appropriate understanding can get better information out of it.
+
+[Roy's recent medical visualization work]: http://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0007354802300238
+
+
 [Ken Moreland]: http://kennethmoreland.com
 [Guan-de Wu]: http://www.gdwu.xyz/about/
 [David Borland]: https://renci.org/staff/david-borland/
+[Roy Ruddle]: http://www.comp.leeds.ac.uk/royr/
