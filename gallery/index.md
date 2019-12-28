@@ -15,6 +15,8 @@ gallery-nav:
     url: "#when-the-truth-is-a-lie"
   - title: I Speak What?
     url: "#i-speak-what"
+  - title: Unpredictable Bars
+    url: "#unpredictable-bars"
 ---
 
 # VisLies 2019 Gallery
@@ -392,8 +394,37 @@ Breaking assumptions like this should be done with care.
 [easily verified]: https://en.wikipedia.org/wiki/List_of_languages_by_the_number_of_countries_in_which_they_are_recognized_as_an_official_language
 
 
+## Unpredictable Bars
+
+<a href="https://drive.google.com/open?id=1DYreWB4sDVUslgvPGJJ-jgaNOLBT8zkw" class="image-right">
+![Odd Forecast Bars](odd-forecast-bars-thumbnail.jpg)
+</a>
+
+Although bar charts can be an effective mode for visualizing data, we have seen them abused in many ways.
+[David Pugmire] presented a bar chart that contains one of the most nonsensical uses of bars so far.
+
+This image is a quick camera shot of a local weather forecast.
+It features a prediction of rain the following Sunday.
+To "help" there is a friendly bar chart.
+But wait, what does the bar chart mean?
+
+There is no label on the chart indicating what the height of the bars mean.
+Is it the expected amount of rainfall?
+The chance of rain occurring?
+And what about the numbers?
+The numbers are completely unrelated to the heights of the bars, and there is no indication of what they mean either.
+
+And why are there 4 bars for a single day (Sunday)?
+The labels up top suggest that each bar represents a different weather prediction model.
+If that is the case, then it simply means each model is giving a different prediction about the rain.
+So how is displaying them in a bar chart helpful to someone planning a picnic?
+
+In short, this confusing chart is the opposite of helpful.
+
+
 [Ken Moreland]: http://kennethmoreland.com
 [Guan-de Wu]: http://www.gdwu.xyz/about/
 [David Borland]: https://renci.org/staff/david-borland/
 [Roy Ruddle]: http://www.comp.leeds.ac.uk/royr/
 [Maria Zemankova]: https://www.nsf.gov/staff/staff_bio.jsp?lan=mzemanko
+[David Pugmire]: https://users.nccs.gov/~pugmire/
