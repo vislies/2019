@@ -19,6 +19,8 @@ gallery-nav:
     url: "#unpredictable-bars"
   - title: The Benefits of Gambling
     url: "#the-benefits-of-gambling"
+  - title: Extrapolating from One Point
+    url: "#extrapolating-from-one-point"
 ---
 
 # VisLies 2019 Gallery
@@ -455,6 +457,42 @@ But none of that really matters.
 If you look closely at the right of the bar chart, you see a label stating "NOT TO SCALE."
 Scale is everything in a bar chart.
 If the measurements are not to scale, then none of the bar chart means anything at all.
+
+
+## Extrapolating from One Point
+
+<a href="https://drive.google.com/open?id=1aeXKvQUFrzHG178o-Pa1knzlOu_C1y4t" class="image-right">
+![Foreign Students](foreign-students-thumbnail.jpg)
+</a>
+
+A lie brought up many times at VisLies is the coupling of a correct visualization with text that draws inappropriate conclusions.
+[Ken][Ken Moreland] found another example of this in [his local paper][Albuquerque Journal].
+[This article on foreign students at New Mexico universities] is about how the enrollment of foreign students is declining.
+Displayed prominently with the article is a bar chart displaying the foreign enrollment.
+
+<div class="image-stop" />
+
+<a href="https://drive.google.com/open?id=1xmIxIQ9VFhO5_zjaiylRF0K5IrLBmcal" class="image-right">
+![Foreign Students Chart](foreign-students-chart-thumbnail.jpg)
+</a>
+
+The chart itself is legitimate.
+The graphic is well designed and the bars are appropriately scaled to provide a clear reading of the data.
+But there is a problem.
+What the chart shows is the _current_ enrollment of foreign students.
+It says nothing about _past_ enrollment and therefore provides no evidence relevant to the article.
+
+For example, the chart clearly shows that New Mexico State University has fewer foreign students than the University of New Mexico.
+But that does not mean that New Mexico State University has fewer students than the previous year.
+It might actually have more.
+You just cannot tell with this data.
+
+To be fair, the article itself provides a modicum of data for the enrollment from the previous year to the current year to show a 4.6% decline.
+But the chart is intended to provide supporting evidence and lend credence to the story.
+It does not, and that makes it a lie.
+
+
+[This article on foreign students at New Mexico universities]: https://www.abqjournal.com/1098054/fewer-foreign-students-choosing-nm-universities.html
 
 
 [Ken Moreland]: http://kennethmoreland.com
