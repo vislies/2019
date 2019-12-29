@@ -17,6 +17,8 @@ gallery-nav:
     url: "#i-speak-what"
   - title: Unpredictable Bars
     url: "#unpredictable-bars"
+  - title: The Benefits of Gambling
+    url: "#the-benefits-of-gambling"
 ---
 
 # VisLies 2019 Gallery
@@ -350,7 +352,7 @@ In such a case, alerting the viewer to the fact that rare occurrences happen is 
 In this case, the bar chart to the right is better.
 The right bar chart uses a discontinuous scaling to make the first and last values visible.
 
-<a href="https://drive.google.com/open?id=10drwfKf-GkFChMj-nxAX0Wy6aUCaZYoz" class="image-left">
+<a href="https://drive.google.com/open?id=10drwfKf-GkFChMj-nxAX0Wy6aUCaZYoz" class="image-right">
 ![Perceptual Discontinuity in Practice](perceptual-discontinuity-in-practice-thumbnail.png)
 </a>
 
@@ -401,7 +403,7 @@ Breaking assumptions like this should be done with care.
 </a>
 
 Although bar charts can be an effective mode for visualizing data, we have seen them abused in many ways.
-[David Pugmire] presented a bar chart that contains one of the most nonsensical uses of bars so far.
+[Dave Pugmire] presented a bar chart that contains one of the most nonsensical uses of bars so far.
 
 This image is a quick camera shot of a local weather forecast.
 It features a prediction of rain the following Sunday.
@@ -422,9 +424,42 @@ So how is displaying them in a bar chart helpful to someone planning a picnic?
 In short, this confusing chart is the opposite of helpful.
 
 
+## The Benefits of Gambling
+
+<a href="https://drive.google.com/open?id=1bDnMhIZorqfl9LUbByMXe8sxlj5xweZe" class="image-left">
+![Gambling Stats](gambling-stats-thumbnail.jpg)
+</a>
+
+[Ken][Ken Moreland] noticed this bar chart that was periodically being displayed on an idle slot machine.
+It shows the payouts of the machine over time (apparently in an attempt to encourage people to feed their money).
+
+A closer look reveals problems with this display.
+It is not clear what time range this bar chart is supposed to cover.
+Is it showing payouts over the last hour?
+Over the last day?
+Week?
+Over the life of the machine?
+It is likewise not clear how much each payout is.
+Are they displayed in absolute dollars or fractions of the bet?
+And where is the baseline?
+Many of the "payouts" are less than the bet put in.
+Thus, the baseline is actually below zero (of course making the bars appear longer.
+
+<div class="image-stop" />
+
+<a href="https://drive.google.com/open?id=1YsItTUMxa-O0Vv--zV7Bs0bf_1fV3Y8g" class="image-right">
+![Gambling Stats](gambling-stats-zoom-thumbnail.jpg)
+</a>
+
+But none of that really matters.
+If you look closely at the right of the bar chart, you see a label stating "NOT TO SCALE."
+Scale is everything in a bar chart.
+If the measurements are not to scale, then none of the bar chart means anything at all.
+
+
 [Ken Moreland]: http://kennethmoreland.com
 [Guan-de Wu]: http://www.gdwu.xyz/about/
 [David Borland]: https://renci.org/staff/david-borland/
 [Roy Ruddle]: http://www.comp.leeds.ac.uk/royr/
 [Maria Zemankova]: https://www.nsf.gov/staff/staff_bio.jsp?lan=mzemanko
-[David Pugmire]: https://users.nccs.gov/~pugmire/
+[Dave Pugmire]: https://users.nccs.gov/~pugmire/
