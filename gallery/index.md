@@ -21,6 +21,8 @@ gallery-nav:
     url: "#the-benefits-of-gambling"
   - title: Extrapolating from One Point
     url: "#extrapolating-from-one-point"
+  - title: Threatening Chart
+    url: "#threatening-chart"
 ---
 
 # VisLies 2019 Gallery
@@ -491,8 +493,28 @@ To be fair, the article itself provides a modicum of data for the enrollment fro
 But the chart is intended to provide supporting evidence and lend credence to the story.
 It does not, and that makes it a lie.
 
-
 [This article on foreign students at New Mexico universities]: https://www.abqjournal.com/1098054/fewer-foreign-students-choosing-nm-universities.html
+
+
+## Threatening Chart
+
+<a href="https://drive.google.com/open?id=16BsuIHqWlTQknQ_TPxLcNYjxXWZ3z1Ss" class="image-right">
+![Read This Or Your Life](abq-robberies-thumbnail.png)
+</a>
+
+[Ken][Ken Moreland] found yet another odd newspaper display.
+(His paper is probably no less accurate than other local papers, but has the misfortune of having Ken scrutinizing it.)
+Here the point is that armed robberies in Albuquerque have risen back to previous highs.
+But note that there is something weird about the data: in a decade's worth of data, only 3 values are given.
+
+The interim data is completely missing.
+Lots of patterns could be hidden here.
+Maybe 2010 was anomalously low.
+For that matter, maybe all 3 measurements are anomalous.
+To make matters worse, notice that the y axis does not go all the way to 0, which further exaggerates the difference.
+
+And just to make the data even more scary, the plot is pointing a gun right at us.
+It seems like the article is hyping up the fear.
 
 
 [Ken Moreland]: http://kennethmoreland.com
