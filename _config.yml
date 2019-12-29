@@ -25,7 +25,7 @@ url: "http://www.vislies.org" # the base hostname & protocol for your site
 this-year: 2019
 first-year: 2015
 
-gallery-ready: false
+gallery-ready: true
 
 # Build settings
 markdown: kramdown
